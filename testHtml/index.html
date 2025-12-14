@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <title>ADTEC JTM Shah Alam</title>
+    <style>
+        :root{
+            --bg:#f6f8fb;
+            --card:#ffffff;
+            --accent:#ff7a18;
+            --muted:#6b7280;
+            --max-width:980px;
+        }
+        *{box-sizing:border-box}
+        body{
+            margin:0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background:var(--bg);
+            color:#111827;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            padding:30px 16px;
+        }
+        .container{
+            max-width:var(--max-width);
+            margin:0 auto;
+            background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.95));
+            border-radius:12px;
+            box-shadow:0 8px 30px rgba(17,24,39,0.08);
+            padding:28px;
+        }
+        .header{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:16px;
+            flex-wrap:wrap;
+        }
+        .branding{
+            font-weight:700;
+            letter-spacing:1px;
+            font-size:20px;
+        }
+        .branding span{color:var(--accent)}
+        .sub-header{color:var(--muted);font-size:13px}
+        nav a.button{
+            display:inline-block;
+            text-decoration:none;
+            background:var(--card);
+            border:1px solid rgba(17,24,39,0.06);
+            color:#111827;
+            padding:8px 14px;
+            border-radius:8px;
+            font-size:14px;
+            box-shadow:0 2px 6px rgba(16,24,40,0.04);
+            margin-left:8px;
+        }
+        nav a.button.primary{
+            background:linear-gradient(90deg,var(--accent),#ffb57a);
+            color:white;
+            border:none;
+        }
+        hr{border:0;border-top:1px solid rgba(17,24,39,0.06);margin:18px 0}
+        h2{margin:6px 0 2px 0}
+        .events{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:16px;
+            margin-top:14px;
+            text-align:left;
+        }
+        .event-card{
+            background:var(--card);
+            border-radius:10px;
+            padding:16px;
+            box-shadow:0 6px 18px rgba(15,23,42,0.04);
+            border:1px solid rgba(15,23,42,0.03);
+        }
+        .event-card h4{margin:0 0 8px 0;font-size:16px}
+        .event-card p{margin:0;color:var(--muted);font-size:14px}
+        footer{display:flex;justify-content:space-between;align-items:center;margin-top:20px;color:var(--muted);font-size:13px}
+        a.simple{color:var(--accent);text-decoration:none}
+        @media (max-width:520px){
+            .header{flex-direction:column;align-items:flex-start}
+            nav{width:100%}
+            nav a.button{width:100%;text-align:center;margin:6px 0 0 0}
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div>
+            <div class="branding">ADTEC <span>SHAH ALAM</span></div>
+            <div class="sub-header">Jabatan Tenaga Manusia · Kementerian Sumber Manusia</div>
+        </div>
+        <nav>
+            <a class="button" href="index.html">Halaman Utama</a>
+            <a class="button primary" href="kursus.html">Kursus</a>
+            <a class="button primary" href="hubungi.html">Hubungi Kami</a>
+             <a class="button primary" href="logmasuk.html">Log Masuk</a>
+        
+
+
+        </nav>
+    </div>
+
+    <hr>
+
+    <h2>Selamat Datang Ke ADTEC JTM Shah Alam</h2>
+    <p class="sub-header">Memperkasa Kemahiran, Menyemarak Masa Hadapan</p>
+
+    <h3>Acara Yang Akan Diadakan</h3>
+    <div class="events">
+        <div class="event-card">
+            <h4>Hari Terbuka</h4>
+            <p>15 Mac, 2025 — Sertai lawatan dan demo kursus kami.</p>
+        </div>
+        <div class="event-card">
+            <h4>Workshop Digital Skills</h4>
+            <p>10 April, 2025 — Kursus praktikal pembangunan web dan alat digital.</p>
+        </div>
+        <div class="event-card">
+            <h4>Acara Graduasi</h4>
+            <p>20 Jun, 2025 — Sambutan graduasi pelajar kami.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div>© 2025 ADTEC JTM Shah Alam</div>
+        <div class="sub-header">www.adtecshahalam.gov.my</div>
+    </footer>
+
+</div>
+
+</body>
+</html>
